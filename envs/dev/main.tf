@@ -5,7 +5,7 @@ provider "kubernetes" {
 
 module "hello" {
   source    = "../../modules/hello-app"
-  namespace = "prod"   # Change this to "dev" if you are currently inside envs/dev
-  port      = 8090     # Change this to 8080 if you are currently inside envs/dev
+  namespace = "dev"   # Change this to "dev" if you are currently inside envs/dev
+  port      = 8080 
 }
 
